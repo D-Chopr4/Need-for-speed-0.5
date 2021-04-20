@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Multiplayer Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+
+
+    <script>
+  //Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDrd_x9mQoqRsCRZ-ODLTVa5HH3hN2EMdY",
+    authDomain: "need-for-speed-e2816.firebaseapp.com",
+    databaseURL: "https://need-for-speed-e2816-default-rtdb.firebaseio.com",
+    projectId: "need-for-speed-e2816",
+    storageBucket: "need-for-speed-e2816.appspot.com",
+    messagingSenderId: "256867164660",
+    appId: "1:256867164660:web:2ea1c9321afb4f799459a1"
+  };
+      //Add here
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="js/Player.js"></script>
+    <script src="js/Form.js"></script>
+    <script src="js/Game.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+  </body>
+</html>
